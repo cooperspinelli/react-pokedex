@@ -1,4 +1,6 @@
 .Pokecard-container {
+  display: inline-block;
+  margin: 20px;
   background-color: lightgray;
   text-align: center;
   width: 150px;

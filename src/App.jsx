@@ -1,5 +1,5 @@
 import './App.css';
-import Pokedex from './Pokedex';
+import Pokegame from './Pokegame';
 
 /** Component for entire page.
  *
@@ -9,7 +9,7 @@ import Pokedex from './Pokedex';
 */
 function App() {
   return (
-    <Pokedex />
+    <Pokegame />
   );
 };
 
