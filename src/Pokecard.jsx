@@ -1,13 +1,13 @@
 import './Pokecard.css';
 
-function pokemonImageUrl(id) {
-    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
-}
 
+/** Renders pokemon card from pokemon data
+ * Props: { name, id, type, base_experience }
+ */
 function Pokecard({ name, id, type, base_experience }) {
     return (<div className="Pokecard-container">
         <h5>{name}</h5>
-        <img src={pokemonImageUrl(id)}/>
+        <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`}/>
         <p>Type: {type}</p>
         <p>Exp: {base_experience}</p>
     </div>)
