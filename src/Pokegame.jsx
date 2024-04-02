@@ -20,11 +20,7 @@ function shuffle(arr) {
 }
 
 function calcTotalExp(pokemon) {
-    let totalExp = 0;
-    for (let pok of pokemon) {
-        totalExp += pok.base_experience;
-    }
-    return totalExp;
+    return pokemon.reduce((accumulator, pok) => accumulator + pok.base_experience, 0 )
 }
 
 function Pokegame({pokemon = pokemonData}) {
